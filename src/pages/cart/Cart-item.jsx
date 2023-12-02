@@ -34,6 +34,7 @@ const CartItem = ({ data }) => {
         </button>
       </div>
       <Link
+        className="btn"
         to={`/cart`}
         state={{ productId: data.id }}
         onClick={handleRemoveFromCart}

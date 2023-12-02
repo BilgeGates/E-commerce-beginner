@@ -11,7 +11,7 @@ const Cart = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="cart">
+    <div className="container cart__container">
       <div>
         <h1>Your Cart Items</h1>
       </div>
