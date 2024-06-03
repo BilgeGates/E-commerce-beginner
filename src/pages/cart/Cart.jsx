@@ -12,9 +12,7 @@ const Cart = () => {
 
   return (
     <div className="container cart__container">
-      <div>
-        <h1>Your Cart Items</h1>
-      </div>
+      <h1>Your Cart Items</h1>
       <div className="cart-items">
         {productsList.map((product) => {
           if (cartItems[product.id] !== 0) {

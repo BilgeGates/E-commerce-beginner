@@ -1,5 +1,6 @@
 .cart__container {
-  padding: 20px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
   border: 1px solid #ddd;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -7,8 +8,7 @@
 }
 
 .cart__container h1 {
-  font-size: 24px;
-  color: #333;
+  margin: 0 0 1rem 0;
 }
 
 .cart-items {
@@ -18,12 +18,13 @@
 }
 
 .cart-item {
-  height: auto;
+  max-height: fit-content;
+  padding: 1.5rem;
   border: 1px solid #ddd;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out;
+  transition: var(--transition);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -53,6 +54,7 @@ input {
   width: 40px;
   text-align: center;
   font-size: 16px;
+  border: 1px solid transparent;
 }
 
 .checkout {
@@ -74,4 +76,12 @@ p {
   font-size: 20px;
   color: #333;
   margin: 40px 0;
+}
+
+.minus__btn,
+.plus__btn {
+  padding: 0.4rem 0.6rem;
+  font-size: 1rem;
+  background: var(--primary-clr);
+  color: var(--white-clr);
 }

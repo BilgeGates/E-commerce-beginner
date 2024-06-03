@@ -19,15 +19,18 @@ const CartItem = ({ data }) => {
     <div className="cart-item">
       <img src={data.productImage} alt={data.productName} />
       <h3>{data.productName}</h3>
-      <p>${data.price}</p>
+      <p>Price: ${data.price}</p>
       <div className="quantity-controls">
-        <button onClick={handleRemoveFromCart}>-</button>
+        <button onClick={handleRemoveFromCart} className="minus__btn">
+          -
+        </button>
         <input
           type="number"
           value={cartItems[data.id]}
           onChange={handleInputChange}
         />
         <button
+          className="plus__btn"
           onClick={() => updateCartItemCount(cartItems[data.id] + 1, data.id)}
         >
           +
