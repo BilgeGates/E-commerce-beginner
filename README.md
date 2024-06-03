@@ -1,7 +1,7 @@
 <h1 align="center">E-commerce Beginner</h1>
 E-commerce Beginner project is a simple technology shopping site built with React. The site has a simple design. You can order many technologies through the site.
 <hr/>
-<img src="./publicl/project_img.jpg" />
+<img src="./public/project_img.jpg" />
 <hr/>
 <h2> 🍿 Technology </h2>
 <p>E-commerce Design is built using the following technologies:
